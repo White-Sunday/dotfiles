@@ -127,8 +127,8 @@ if filereadable("/etc/vim/vimrc.local")
 endif
 
 " murphy
-colorscheme murphy
-let g:airline_theme="base16_bright"
+" colorscheme murphy
+" let g:airline_theme="base16_bright"
 
 " gruvbox
 " colorscheme gruvbox
@@ -136,7 +136,8 @@ let g:airline_theme="base16_bright"
 
 " gotham256
 " colorscheme gotham256
-" let g:airline_theme="gotham256"
+colorscheme elflord
+let g:airline_theme="gotham256"
 
 " 设置背景透明，注意设置在主题设置后面，防止被覆盖
 hi Normal guibg=NONE ctermbg=NONE

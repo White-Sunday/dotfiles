@@ -102,8 +102,9 @@ source $ZSH/oh-my-zsh.sh
 
 export DEFAULT_USER=$USER
 
-# 如果暗色背景下ls目录显示不明显，可以将其设置为青色
+# 如果暗色背景下ls目录显示不明显， 可以将其设置为青色
 export LS_COLORS=${LS_COLORS}'di=01;36':
 
 # 设置zsh终端补全大小写敏感
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' '+m:{A-Z}={a-z}'
+
