@@ -120,9 +120,9 @@ export NVBOARD_HOME=/home/white/Data/Code/ysyx/ysyx-workbench/nvboard
 export NEMU_HOME=/home/white/Data/Code/ysyx/ysyx-workbench/nemu
 export AM_HOME=/home/white/Data/Code/ysyx/ysyx-workbench/abstract-machine
 
-source /opt/Xilinx/Vivado/2023.1/settings64.sh
-source /opt/Xilinx/Vitis_HLS/2023.1/settings64.sh
-source /opt/Xilinx/Vitis/2023.1/settings64.sh
+# source /opt/Xilinx/Vivado/2023.1/settings64.sh
+# source /opt/Xilinx/Vitis_HLS/2023.1/settings64.sh
+# source /opt/Xilinx/Vitis/2023.1/settings64.sh
 # source /home/white/tools/petalinux/settings.sh
 
 # 黄色
@@ -134,13 +134,13 @@ source /opt/Xilinx/Vitis/2023.1/settings64.sh
 # 蓝色直角
 # PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]┌──[\[\033[01;32m\]\u@\h\[\033[01;34m\]]-[\[\033[01;36m\]\w\[\033[01;34m\]]\n\[\033[01;34m\]└─\[\033[00m\]\$ '
 # 蓝色弯
-PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]╭──[\[\033[01;32m\]\u@\h\[\033[01;34m\]]-[\[\033[01;36m\]\w\[\033[01;34m\]]\n\[\033[01;34m\]╰─\[\033[00m\]\$ '
+# PS1='${debian_chroot:+($debian_chroot)}\[\033[01;34m\]╭──[\[\033[01;32m\]\u@\h\[\033[01;34m\]]-[\[\033[01;36m\]\w\[\033[01;34m\]]\n\[\033[01;34m\]╰─\[\033[00m\]\$ '
 
 # agnoster主题
-# PS1='${debian_chroot:+($debian_chroot)}\[\033[01;30;43m\] \u@\h \[\033[01;33;44m\]\[\033[01;30;44m\] \w \[\033[00;01;34m\] \[\033[00m\]'
+# PS1='${debian_chroot:+($debian_chroot)}\[\033[30;43m\] \u@\h \[\033[33;44m\]\[\033[30;44m\] \w \[\033[00;34m\] \[\033[00m\]'
 
 # agnoster主题-去用户名版
-# PS1='${debian_chroot:+($debian_chroot)}\[\033[01;30;44m\] \w \[\033[00;01;34m\] \[\033[00m\]'
+PS1='${debian_chroot:+($debian_chroot)}\[\033[30;44m\] \w \[\033[00;34m\] \[\033[00m\]'
 
 # 将ls显示目录字体换成青色，以适应偏紫色主题
 export LS_COLORS=${LS_COLORS}'di=01;36':
@@ -150,4 +150,10 @@ alias tmux="TERM=screen-256color-bce tmux"
 
 # 终端状态栏中显示user@hostname:dir
 PROMPT_COMMAND='echo -ne "\033]0;${USER}@${HOSTNAME}:${PWD/#$HOME/\~}\007"'
+
+# for Rust
+. "$HOME/.cargo/env"
+
+# neovim
+export PATH="$PATH:/opt/nvim-linux64/bin"
 
